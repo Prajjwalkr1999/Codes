@@ -1,0 +1,4 @@
+Case #1: 0 5
+Case #1: 0 INDEFINITELY
+Case #2: 1 INDEFINITELY
+Case #3: 0 20

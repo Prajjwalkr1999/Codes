@@ -1,0 +1,22 @@
+vector<vector<char>> a;
+bool func(int i,int j,string s,bool down,bool right){
+	//if(i>n&&j>m) return true;
+	//if(x>s.size()) return true;
+	vector<pair<int,int>> v;
+	for(int i=0;i<n;i++){
+		for(int j=0;j<m;j++){
+			if(a[i][j]==s[0]){
+				v.push_back({i,j});
+			}
+		}
+	}	
+	for(auto x:v){
+		int z=0;
+		bool ans=true;
+		for(int i=x.first;i<n&&z<s.size();i++)
+			if(a[i][x.second]!=s[z++]) ans=false;
+		for(int j=x.Second;j<m&&z<s.size();j++){
+			if(a[x.first][j]!=s[z++]) ans=false;
+		} 
+	}
+}
